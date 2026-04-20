@@ -24,10 +24,10 @@ export default function HomePage() {
   return (
     <main>
       <HeroSection />
+      <VeganSection />
       <StandorteSection />
       <AboutSection />
       <ProductsSection />
-      <VeganSection />
       <CtaSection />
     </main>
   );

@@ -74,9 +74,9 @@ export default function VeganSection() {
               Bei LuiLui Eis ist für jeden Geschmack etwas dabei.
             </p>
 
-            <div className="inline-flex items-center gap-2 bg-white rounded-lg px-4 py-2 mt-5 lg:mx-0 mx-auto">
-              <Leaf size={20} className="text-luilui-primary" />
-              <span className="font-inter text-sm font-semibold text-luilui-primary">
+            <div className="inline-flex items-center gap-2 bg-emerald-100 border border-emerald-200 rounded-lg px-4 py-2 mt-5 lg:mx-0 mx-auto">
+              <Leaf size={20} className="text-emerald-700" />
+              <span className="font-inter text-sm font-semibold text-emerald-700">
                 100% pflanzliche Optionen verfügbar
               </span>
             </div>
@@ -89,7 +89,7 @@ export default function VeganSection() {
                 src="/images/vegan-sorbet.jpg"
                 alt="Veganes Eis und Sorbet bei LuiLui Eis Leipzig"
                 loading="lazy"
-                className="w-full aspect-video lg:aspect-square object-cover"
+                className="w-full h-[280px] object-cover object-[center_55%] scale-100 sm:h-auto sm:aspect-video sm:object-center lg:aspect-square"
               />
             </div>
           </div>

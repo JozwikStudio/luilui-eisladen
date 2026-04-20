@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Leaf } from 'lucide-react';
 import SectionBadge from '@/components/SectionBadge';
 
 export default function HeroSection() {
@@ -13,6 +13,11 @@ export default function HeroSection() {
 
   const scrollToStandorte = () => {
     const el = document.getElementById('standorte');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const scrollToVegan = () => {
+    const el = document.getElementById('vegan');
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -45,8 +50,15 @@ export default function HeroSection() {
         <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12 xl:gap-16">
           {/* Text Content */}
           <div className="flex-1 lg:max-w-[55%]">
-            <div ref={badgeRef}>
+            <div ref={badgeRef} className="flex flex-wrap items-center gap-2">
               <SectionBadge text="3x in Leipzig" />
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-white border border-luilui-primary/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.08em] text-luilui-primary shadow-luilui-sm">
+                Hausgemacht & täglich frisch
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-100 border border-emerald-200 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.08em] text-emerald-700 shadow-luilui-sm">
+                <Leaf size={14} />
+                Vegane Optionen
+              </span>
             </div>
 
             <h1
@@ -59,24 +71,36 @@ export default function HeroSection() {
 
             <p
               ref={subRef}
-              className="font-inter text-base text-luilui-muted-text leading-relaxed mt-4 max-w-[480px]"
+              className="font-inter text-base text-luilui-muted-text leading-relaxed mt-4 max-w-[560px]"
             >
-              Hausgemachtes Eis mit Liebe gemacht — frisch, cremig und mit regionalen Zutaten. 
-              In drei Locations in Leipzig erwartet dich Eisgenuss auf höchstem Niveau.
+              Hausgemachtes Eis mit Liebe gemacht — frisch, cremig und mit regionalen Zutaten.
+              In drei Locations in Leipzig erwartet dich Eisgenuss auf höchstem Niveau, 
+              inklusive leckerer veganer Sorten und fruchtiger Sorbets.
             </p>
 
-            <div ref={ctaRef} className="flex flex-col sm:flex-row gap-3 mt-8">
+            <div className="inline-flex items-center gap-2 bg-emerald-100 border border-emerald-200 rounded-full px-4 py-2 mt-5 text-emerald-700 shadow-luilui-sm">
+              <Leaf size={18} />
+              <span className="font-inter text-sm font-semibold">Auch veganes Eis täglich verfügbar</span>
+            </div>
+
+            <div ref={ctaRef} className="flex flex-col sm:flex-row sm:flex-nowrap gap-3 mt-8">
               <button
                 onClick={scrollToStandorte}
-                className="w-full sm:w-auto bg-luilui-primary text-white font-inter font-semibold text-base px-8 py-4 rounded-full shadow-luilui-md hover:bg-luilui-primary-dark hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+                className="w-full sm:w-auto whitespace-nowrap bg-luilui-primary text-white font-inter font-semibold text-base px-8 py-4 rounded-full shadow-luilui-md hover:bg-luilui-primary-dark hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
               >
                 Route planen
               </button>
               <button
                 onClick={scrollToStandorte}
-                className="w-full sm:w-auto bg-transparent text-luilui-primary font-inter font-semibold text-base px-8 py-4 rounded-full border-2 border-luilui-primary hover:bg-luilui-primary/5 transition-all duration-200"
+                className="w-full sm:w-auto whitespace-nowrap bg-transparent text-luilui-primary font-inter font-semibold text-base px-8 py-4 rounded-full border-2 border-luilui-primary hover:bg-luilui-primary/5 transition-all duration-200"
               >
                 Standorte ansehen
+              </button>
+              <button
+                onClick={scrollToVegan}
+                className="w-full sm:w-auto whitespace-nowrap bg-transparent text-luilui-primary font-inter font-semibold text-base px-8 py-4 rounded-full border-2 border-luilui-primary hover:bg-luilui-primary/5 transition-all duration-200"
+              >
+                Vegane Sorten entdecken
               </button>
             </div>
           </div>

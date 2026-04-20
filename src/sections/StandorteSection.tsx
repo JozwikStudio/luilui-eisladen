@@ -8,17 +8,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 const locations = [
   {
-    name: 'Georg-Schumann-Straße 141',
-    address: 'Georg-Schumann-Straße 141',
-    postalCode: '04117',
+    name: 'Georg‑Schumann‑Straße 141',
+    address: 'Georg‑Schumann‑Straße 141',
+    postalCode: '04155',
     hours: 'Öffnungszeiten: Täglich 12–20 Uhr',
-    mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.0!2d12.3645!3d51.3548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a6f9c7b9c0c0c1%3A0x0!2zR2VvcnctU2NodW1hbm4tU3RyLiAxNDEsIDA0MTE3IExlaXB6aWc!5e0!3m2!1sde!2sde!4v1',
-    routeUrl: 'https://www.google.com/maps/dir/?api=1&destination=Georg-Schumann-Straße+141,+04117+Leipzig',
+    mapUrl: 'https://www.google.com/maps?q=Georg-Schumann-Straße+141,+04155+Leipzig&output=embed',
+    routeUrl: 'https://www.google.com/maps/dir/?api=1&destination=Georg-Schumann-Straße+141,+04155+Leipzig',
     pagePath: '/georg-schumann-141',
   },
   {
-    name: 'Georg-Schwarz-Straße 64',
-    address: 'Georg-Schwarz-Straße 64',
+    name: 'Georg‑Schwarz‑Straße 64',
+    address: 'Georg‑Schwarz‑Straße 64',
     postalCode: '04155',
     hours: 'Öffnungszeiten: Täglich 12–20 Uhr',
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.1!2d12.3700!3d51.3450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a6f9c7b9c0c0c2%3A0x0!2zR2VvcnctU2Nod2Fyei1TdHIuIDY0LCAwNDE1NSBMZWlwc2ln!5e0!3m2!1sde!2sde!4v1',
@@ -26,8 +26,8 @@ const locations = [
     pagePath: '/georg-schwarz-64',
   },
   {
-    name: 'Zweinaundorfer Straße 63',
-    address: 'Zweinaundorfer Straße 63',
+    name: 'Zweinaundorfer Straße 63',
+    address: 'Zweinaundorfer Straße 63',
     postalCode: '04318',
     hours: 'Öffnungszeiten: Täglich 12–20 Uhr',
     mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.2!2d12.3800!3d51.3400!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a6f9c7b9c0c0c3%3A0x0!2zWndlaW5hdW5kb3JmZXIgU3RyLiA2MywgMDQzMTggTGVpcHNpZw!5e0!3m2!1sde!2sde!4v1',
